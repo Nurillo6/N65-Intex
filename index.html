@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Login</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="login-bg">
+    
+    <form class="login-form w-[621px] h-[462px] pt-[35px] text-center pb-[46px] bg-[#F8F8F8] rounded-[25px] shadow-lg fixed right-0 left-0 top-0 bottom-0 m-auto">
+        <img class="mb-[17px] mx-auto" src="./images/Login/logo.svg" alt="Site Logo" width="421" height="72">
+        <p class="font-bold text-[25px] leading-[29.03px] text-[#A3A3A3]">Введите имя пользователя и пароль, чтобы получить доступ к системе.</p>
+        <input class="w-[360px] mt-[40px] mb-[16px] text-center py-[12px] rounded-[17px] outline-none shadow placeholder:font-bold placeholder:text-[25px] text-[20px] border-[1px] border-[#CBCBCB] text-[#A3A3A3]" type="text" placeholder="Имя пользователя" required name="username">
+        <input class="w-[360px] text-center py-[12px] rounded-[17px] outline-none shadow placeholder:font-bold placeholder:text-[25px] border-[1px] text-[20px] border-[#CBCBCB] text-[#A3A3A3]" type="password" placeholder="Пароль" required name="password">
+        <button class="w-[237px] bg-[#3F8C8E] font-bold text-white text-[25px] block mx-auto mt-[47px] py-[8px] rounded-[10px]" type="submit" >Войти</button>
+    </form>
+
+
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
